@@ -14,7 +14,7 @@ class Habitation;
 
 
 
-	auto makeCircle (int x, int y, int diam, auto color, int largeur)
+	sf::CircleShape makeCircle (int x, int y, int diam, auto color, int largeur)
 	{
 		sf::CircleShape returne ;
 		returne.setPosition(x,y);
@@ -24,8 +24,8 @@ class Habitation;
 		returne.setOutlineThickness(largeur);
 		return returne;
 	};
-	
-	auto makeRectangle  (auto hg, auto bd, auto color, int largeur, sf::Color in = sf::Color::Transparent)
+
+	sf::RectangleShape makeRectangle  (auto hg, auto bd, auto color, int largeur, sf::Color in = sf::Color::Transparent)
 	{
 		sf::RectangleShape returne  ;
 		returne.setPosition(hg);
