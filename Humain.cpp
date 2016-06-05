@@ -4,7 +4,7 @@
 #include "ComportementRencontre.hpp"
 #include "Arme.hpp"
 #include "Habitation.hpp"
-#include "Zombie.h"
+#include "Zombie.hpp"
 #include "Etre.hpp"
 #include "fonction.hpp"
  sf::Vector2f Humain::baryCentreZombie()
@@ -109,7 +109,7 @@ valeurAttaqueCac =0;
 
 bool Humain::updateComportement ( double temps )
 {
-    age += temps; // on met à jour l'âge du monsieur
+    age += temps; // on met Ã  jour l'Ã¢ge du monsieur
     //std::cout << age << std::endl;
     int delais = World::dureeJournee;
 
@@ -138,7 +138,7 @@ bool Humain::updateComportement ( double temps )
         }
         else
         {
-            // pourquoi ça ralenti
+            // pourquoi Ã§a ralenti
             if ( pointDestination.size() == 0)
                 pointDestination.push_back( a_taff->localisation);
             if ( sousEtat != 1)
@@ -174,7 +174,7 @@ bool Humain::updateComportement ( double temps )
 
         Etre* test = this;
 
-        //comportement réaliste ^^
+        //comportement rÃ©aliste ^^
         if ( position.x != a_famille->logement->localisation.x &&
              position.y != a_famille->logement->localisation.y &&
              position.x != a_taff->localisation.x &&
@@ -213,7 +213,7 @@ bool Humain::updateComportement ( double temps )
 
 
 
-        // si on a fuit assez loin ou si on a tué le zombie on continue sa vie
+        // si on a fuit assez loin ou si on a tuÃ© le zombie on continue sa vie
     }
 
 

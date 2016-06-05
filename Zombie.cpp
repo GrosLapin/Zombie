@@ -1,6 +1,6 @@
-#include "Zombie.h"
+#include "Zombie.hpp"
 #include <SFML/Graphics.hpp>
-#include "Word.h"
+#include "Word.hpp"
 #include "fonction.hpp"
 #include "Humain.hpp"
 #include "Habitation.hpp"
@@ -85,15 +85,15 @@ Zombie::~Zombie()
 
 bool Zombie::updateComportement ( double temps )
 {
-    age += temps*1000; // on met à jour l'âge du monsieur
+    age += temps*1000; // on met Ã  jour l'Ã¢ge du monsieur
 
 
-    // on est à 1 si on voit qqn sinon on est à 0
+    // on est Ã  1 si on voit qqn sinon on est Ã  0
 
     Etre* cible = NULL;
     for ( Etre* e : World::vecEtre )
     {
-        // est ce que c'est a porté
+        // est ce que c'est a portÃ©
         if ( e->estHumain == 1  && distance(position,e->position) < rangeVision )
         {
 
@@ -116,11 +116,11 @@ bool Zombie::updateComportement ( double temps )
 
     switch (etat)
     {
-        // état normal : je me balade sans but
+        // Ã©tat normal : je me balade sans but
         case 0 :
 
             vitesse = 50;
-            // si on sait pas ou aller , on crée un point ^^
+            // si on sait pas ou aller , on crÃ©e un point ^^
             if ( pointDestination.size() == 0)
             {
 

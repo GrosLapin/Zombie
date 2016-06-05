@@ -1,4 +1,4 @@
-#include "Word.h"
+#include "Word.hpp"
 #include "Habitation.hpp"
 #include <SFML/Graphics.hpp>
 #include <iostream>

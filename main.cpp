@@ -22,8 +22,8 @@
 #include "Habitation.hpp"
 #include "Famille.hpp"
 #include "fonction.hpp"
-#include "Word.h"
-#include "Zombie.h"
+#include "Word.hpp"
+#include "Zombie.hpp"
 #include "Arme.hpp"
 
 using namespace std;

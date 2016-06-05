@@ -2,7 +2,7 @@
 #include "Etre.hpp"
 #include "Habitation.hpp"
 #include "Humain.hpp"
-#include "Word.h"
+#include "Word.hpp"
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include "Arme.hpp"
