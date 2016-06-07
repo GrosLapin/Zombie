@@ -19,6 +19,6 @@ add_executable(
         ${mesFichiers}
 )
 
-target_link_libraries (Zombie sfml-graphics-d)
-target_link_libraries (Zombie sfml-window-d)
-target_link_libraries (Zombie sfml-system-d)
+target_link_libraries (Zombie sfml-graphics)
+target_link_libraries (Zombie sfml-window)
+target_link_libraries (Zombie sfml-system)
